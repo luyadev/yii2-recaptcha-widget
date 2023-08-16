@@ -114,12 +114,6 @@ abstract class ReCaptchaBaseValidator extends Validator
             }
         }
 
-        if (!$this->httpClientRequest) {
-            if ($reCaptchaConfig && $reCaptchaConfig->httpClientRequest) {
-                $this->httpClientRequest = $reCaptchaConfig->httpClientRequest;
-            } else {
-                $this->httpClientRequest = (new HttpClient())->createRequest();
-            }
-        }
+        $this->httpClientRequest = (new HttpClient())->createRequest();
     }
 }
