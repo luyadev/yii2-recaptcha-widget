@@ -28,8 +28,7 @@ Sign up [for an reCAPTCHA API keys](https://www.google.com/recaptcha/admin/creat
     ...
 ``` 
 
-Add `ReCaptchaValidator2` or `ReCaptchaValidator3` in your model, for example:
-
+Add `ReCaptchaValidator2` or `ReCaptchaValidator3` as validator into your model, do not forget to set those attributes as required.
 
 ```php
 public $reCaptcha;
@@ -37,6 +36,7 @@ public $reCaptcha;
 public function rules()
 {
     return [
+        [['reCaptcha'], 'required'],
         [['reCaptcha'], \luyadev\recaptcha\ReCaptchaValidator2::class, 'uncheckedMessage' => 'Please confirm that you are not a bot.'],
     ];
 }
@@ -48,6 +48,7 @@ public $reCaptcha;
 public function rules()
 {
     return [
+        [['reCaptcha'], 'required'],
         [['reCaptcha'], \luyadev\recaptcha\ReCaptchaValidator3::class, 'threshold' => 0.5, 'action' => 'homepage'],
     ];
 }
@@ -68,17 +69,17 @@ $form->field($model, 'reCaptcha')->widget(\luyadev\recaptcha\ReCaptcha3::class, 
 as widgets:
 
 ```php
-<?= \luyadev\recaptcha\ReCaptcha2::widget([
+\luyadev\recaptcha\ReCaptcha2::widget([
     'name' => 'reCaptcha',
     'widgetOptions' => ['class' => 'col-sm-offset-3'],
-]) ?>
+]);
 ```
 
 v3
 ```php
-<?= \luyadev\recaptcha\ReCaptcha3::widget([
+\luyadev\recaptcha\ReCaptcha3::widget([
     'name' => 'reCaptcha',
     'action' => 'homepage',
     'widgetOptions' => ['class' => 'col-sm-offset-3'],
-]) ?>
+]);
 ```
