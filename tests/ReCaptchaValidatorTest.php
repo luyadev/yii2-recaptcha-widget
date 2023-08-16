@@ -1,8 +1,8 @@
 <?php
 
-namespace himiklab\yii2\recaptcha\tests;
+namespace luyadev\recaptcha\tests;
 
-use himiklab\yii2\recaptcha\ReCaptchaValidator;
+use luyadev\recaptcha\ReCaptchaValidator;
 use PHPUnit\Framework\TestCase;
 use ReflectionClass;
 

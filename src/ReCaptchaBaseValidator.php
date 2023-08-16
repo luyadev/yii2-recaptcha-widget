@@ -5,7 +5,7 @@
  * @license http://opensource.org/licenses/MIT MIT
  */
 
-namespace himiklab\yii2\recaptcha;
+namespace luyadev\recaptcha;
 
 use Yii;
 use yii\base\Exception;
@@ -16,7 +16,7 @@ use yii\validators\Validator;
  * ReCaptcha widget validator base class.
  *
  * @author HimikLab
- * @package himiklab\yii2\recaptcha
+ * @package luyadev\recaptcha
  */
 abstract class ReCaptchaBaseValidator extends Validator
 {

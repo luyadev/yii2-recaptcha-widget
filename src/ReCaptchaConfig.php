@@ -5,14 +5,14 @@
  * @license http://opensource.org/licenses/MIT MIT
  */
 
-namespace himiklab\yii2\recaptcha;
+namespace luyadev\recaptcha;
 
 /**
  * Yii2 Google reCAPTCHA widget global config.
  *
  * @see https://developers.google.com/recaptcha
  * @author HimikLab
- * @package himiklab\yii2\recaptcha
+ * @package luyadev\recaptcha
  */
 class ReCaptchaConfig
 {

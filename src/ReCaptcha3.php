@@ -5,7 +5,7 @@
  * @license http://opensource.org/licenses/MIT MIT
  */
 
-namespace himiklab\yii2\recaptcha;
+namespace luyadev\recaptcha;
 
 use Yii;
 use yii\base\InvalidConfigException;
@@ -42,7 +42,7 @@ use yii\widgets\InputWidget;
  *
  * @see https://developers.google.com/recaptcha/docs/v3
  * @author HimikLab
- * @package himiklab\yii2\recaptcha
+ * @package luyadev\recaptcha
  */
 class ReCaptcha3 extends InputWidget
 {

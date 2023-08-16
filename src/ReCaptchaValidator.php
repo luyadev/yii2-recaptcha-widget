@@ -5,7 +5,7 @@
  * @license http://opensource.org/licenses/MIT MIT
  */
 
-namespace himiklab\yii2\recaptcha;
+namespace luyadev\recaptcha;
 
 use Yii;
 use yii\base\InvalidConfigException;
@@ -14,7 +14,7 @@ use yii\base\InvalidConfigException;
  * ReCaptcha widget validator.
  *
  * @author HimikLab
- * @package himiklab\yii2\recaptcha
+ * @package luyadev\recaptcha
  * @deprecated
  */
 class ReCaptchaValidator extends ReCaptchaValidator2
