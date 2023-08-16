@@ -7,6 +7,7 @@
 > **THIS IS A FORK FROM THE ARCHIVED [HIMIKLAB](https://github.com/himiklab/yii2-recaptcha-widget) REPOSITORY. THE MAIN GOAL IS TO SUPPORT LATEST PHP VERSIONS**
 
 [![Tests](https://github.com/luyadev/yii2-recaptcha-widget/actions/workflows/tests.yml/badge.svg)](https://github.com/luyadev/yii2-recaptcha-widget/actions/workflows/tests.yml)
+[![Total Downloads](https://poser.pugx.org/luyadev/yii2-recaptcha-widget/downloads)](https://packagist.org/packages/luyadev/yii2-recaptcha-widget)
 
 ## Installation
 
