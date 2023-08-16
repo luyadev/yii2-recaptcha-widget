@@ -34,11 +34,9 @@ public $reCaptcha;
 
 public function rules()
 {
-  return [
-      // ...
-      [['reCaptcha'], \luyadev\recaptcha\ReCaptchaValidator2::class,
-        'uncheckedMessage' => 'Please confirm that you are not a bot.'],
-  ];
+    return [
+        [['reCaptcha'], \luyadev\recaptcha\ReCaptchaValidator2::class, 'uncheckedMessage' => 'Please confirm that you are not a bot.'],
+    ];
 }
 ```
 
@@ -47,13 +45,9 @@ public $reCaptcha;
 
 public function rules()
 {
-  return [
-      // ...
-      [['reCaptcha'], \luyadev\recaptcha\ReCaptchaValidator3::class,
-        'threshold' => 0.5,
-        'action' => 'homepage',
-      ],
-  ];
+    return [
+        [['reCaptcha'], \luyadev\recaptcha\ReCaptchaValidator3::class, 'threshold' => 0.5, 'action' => 'homepage'],
+    ];
 }
 ```
 

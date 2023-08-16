@@ -30,5 +30,20 @@
         "psr-4": {
             "luyadev\\recaptcha\\tests\\": "tests/"
         }
-    }
+    },
+    "config": {
+		"fxp-asset": {
+			"enabled": false
+		},
+		"allow-plugins": {
+			"yiisoft/yii2-composer": true,
+			"luyadev/luya-composer": true
+		}
+	},
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
 }
