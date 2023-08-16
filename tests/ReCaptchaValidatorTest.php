@@ -43,7 +43,7 @@ class ReCaptchaValidatorTest extends TestCase
             ->method('getResponse')
             ->willReturn([]);
 
-        $this->setExpectedException('yii\base\Exception');
+        $this->expectException('yii\base\Exception');
         $this->validatorMethod->invoke($this->validatorClass, 'test');
     }
 
@@ -59,7 +59,7 @@ class ReCaptchaValidatorTest extends TestCase
             ->willReturn('test');
         $this->validatorClass->checkHostName = true;
 
-        $this->setExpectedException('yii\base\Exception');
+        $this->expectException('yii\base\Exception');
         $this->validatorMethod->invoke($this->validatorClass, 'test');
     }
 
@@ -78,7 +78,7 @@ class ReCaptchaValidatorTest extends TestCase
         $this->validatorMethod->invoke($this->validatorClass, 'test');
     }
 
-    public function setUp()
+    public function setUp() : void
     {
         parent::setUp();
         $this->validatorClass = $this->getMockBuilder(ReCaptchaValidator::className())
