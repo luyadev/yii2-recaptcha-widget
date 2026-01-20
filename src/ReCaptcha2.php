@@ -93,7 +93,7 @@ class ReCaptcha2 extends InputWidget
     /** @var array Additional html widget options, such as `class`. */
     public $widgetOptions = [];
 
-    public function __construct($siteKey = null, $jsApiUrl = null, $config = [])
+    public function __construct(?string $siteKey = null, ?string $jsApiUrl = null, array $config = [])
     {
         if ($siteKey && !$this->siteKey) {
             $this->siteKey = $siteKey;
