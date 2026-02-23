@@ -64,7 +64,7 @@ class ReCaptcha3 extends InputWidget
     /** @var string */
     public $configComponentName = 'reCaptcha';
 
-    public function __construct($siteKey = null, $jsApiUrl = null, $config = [])
+    public function __construct(?string $siteKey = null, ?string $jsApiUrl = null, array $config = [])
     {
         if ($siteKey && !$this->siteKey) {
             $this->siteKey = $siteKey;
